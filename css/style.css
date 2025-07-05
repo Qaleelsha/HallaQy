@@ -1,0 +1,811 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #f4b400;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: radial-gradient(circle at top, #0a0f2c, #000);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hero-logo {
+  max-width: 300px; /* Adjust to your preference */
+  height: auto;
+}
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #f4b400; /* Golden yellow */
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #f4b400;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e0a800;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Responsive on small screens */
+}
+
+.btn-primary {
+  background: #f4b400;
+  color: #000;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #f4b400;
+  color: #f4b400;
+}
+
+.btn-primary:hover {
+  background: #e0a800;
+}
+
+.btn-secondary:hover {
+  background: #f4b400;
+  color: #000;
+}
+
+/* Services Section */
+.services {
+  padding: 80px 20px;
+  background: #f8f9fc;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #0a0f2c;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-icon {
+  background: #f4b400;
+  color: #000;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.service-icon i {
+  font-size: 20px;
+}
+
+.service-card h3 {
+  margin-bottom: 5px;
+  color: #0a0f2c;
+}
+
+.price {
+  margin: 0; 
+  font-weight: 700;
+  font-size: 1rem;
+  color: #333; /* dark text */
+}
+
+
+.service-card p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 4px;
+}
+
+.service-card ul li {
+  font-size: 0.85rem;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+  color: #333; /* <-- Makes text dark and readable on white background */
+}
+
+.service-card ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #f4b400; /* Golden bullet point */
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* === How It Works Section === */
+.how-it-works {
+  background: #0c0c1e; /* same dark hero bg */
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.how-it-works .how-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 60px;
+}
+
+.how-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.how-step {
+  max-width: 250px;
+}
+
+.how-icon {
+  background: linear-gradient(135deg, #f9b233, #ff8c00); /* gold/orange gradient */
+  color: #fff;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.how-step h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.how-step p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+
+/* === Why Choose Section === */
+.why-choose {
+  display: flex;
+  flex-wrap: wrap;
+  background: #0c0c1e; /* same as hero */
+  color: #fff;
+  padding: 80px 40px;
+  gap: 60px;
+}
+
+.why-left {
+  flex: 1 1 500px;
+}
+
+.why-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.why-left h2 span {
+  color: #f9b233; /* brand accent */
+}
+
+.why-left p {
+  color: #ccc;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-item i {
+  background: #f9b233;
+  color: #0c0c1e;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.feature-item h4 {
+  margin: 0 0 5px;
+  font-weight: 600;
+}
+
+.feature-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+.why-right {
+  flex: 1 1 400px;
+  background: #161a2b; /* slightly lighter for contrast */
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.why-right h3 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.why-right .subheading {
+  margin-bottom: 30px;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+.reviews-carousel {
+  position: relative;
+  height: 150px;
+}
+
+.review {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.review.active {
+  opacity: 1;
+}
+
+.review p {
+  font-style: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.review span {
+  font-size: 0.9rem;
+  color: #f9b233;
+}
+
+/* === Who It’s For & Safety === */
+.who-safety {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #0c0c1e; /* same as hero & why choose */
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.who, .safety {
+  flex: 1 1 450px;
+  background: #161a2b; /* slight contrast box */
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.who h3, .safety h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.who ul, .safety ul {
+  list-style: none;
+  padding: 0;
+}
+
+.who li, .safety li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.who li i, .safety li i {
+  color: #f9b233;
+  background: #1e2133;
+  padding: 10px;
+  border-radius: 50%;
+  min-width: 36px;
+  text-align: center;
+}
+
+.safety p {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+/* === CTA Section === */
+.cta-section {
+  background: #f5f7fb;  /* Light background for contrast */
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: #0c0c1e;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-buttons a {
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #f9b233;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #ffbf47;
+}
+
+.btn-outline {
+  border: 2px solid #f9b233;
+  color: #0c0c1e;
+}
+
+.btn-outline:hover {
+  background: #f9b233;
+  color: #000;
+}
+
+.cta-buttons i {
+  margin-right: 8px;
+}
+
+/* === Stats Section === */
+.stats-section {
+  background: #f5f7fb;  /* Light background for contrast */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat-item {
+  flex: 1 1 200px;
+}
+
+.stat-item i {
+  font-size: 2rem;
+  color: #f9b233; /* Accent color */
+  margin-bottom: 10px;
+}
+
+.stat-item h3 {
+  font-size: 1.8rem;
+  color: #0c0c1e;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* === Footer === */
+.footer {
+  background: #fff;
+  padding: 60px 40px;
+  color: #333;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  margin: 5px 0;
+}
+
+.footer-links ul,
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-services li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #0c0c1e;
+}
+
+.footer-contact p {
+  margin: 8px 0;
+}
+
+.footer i {
+  margin-right: 8px;
+  color: #f9b233; /* Accent */
+}
+
+/* === Booking Modal === */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  position: relative;
+  color: #0c0c1e;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0c0c1e;
+}
+
+.modal-content label {
+  display: block;
+  margin: 12px 0 5px;
+  font-weight: 600;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.location-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.location-wrapper button {
+  flex-shrink: 0;
+  background: #f9b233;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.book-btn {
+  display: block;
+  width: 100%;
+  background: #0c0c1e;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 15px; right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ================================
+   📱 Mobile Responsiveness
+   ================================ */
+@media (max-width: 768px) {
+  /* 1. General Body Padding */
+  body {
+    padding: 0 1rem;
+  }
+
+  /* 2. Hero Section */
+  .hero-section {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+  .hero-section .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* 3. Service Cards */
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* 4. Booking Modal */
+  .booking-modal-content {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .booking-modal-content input,
+  .booking-modal-content select,
+  .booking-modal-content textarea {
+    width: 100%;
+  }
+
+  /* 5. Buttons General */
+  .btn, .btn-primary, .book-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* 6. How It Works Section */
+  .how-it-works {
+    flex-direction: column;
+    text-align: center;
+  }
+  .how-step {
+    margin-bottom: 20px;
+  }
+
+  /* 7. Why Choose Us Section */
+  .why-choose {
+    flex-direction: row;
+  }
+  .why-left, .why-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* 8. Footer */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* 9. CTA Sections */
+  .cta-section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+  .cta-section p {
+    font-size: 1rem;
+  }
+  .cta-section .btn {
+    width: 100%;
+  }
+
+  /* 10. Carousel / Testimonials */
+  .testimonial {
+    font-size: 1rem;
+  }
+
+  /* 11. Navigation if needed */
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+}
