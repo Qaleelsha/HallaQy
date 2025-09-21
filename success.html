@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Successful | HALLAQY</title>
+  <link rel="stylesheet" href="assets/css/style.css"> <!-- your main CSS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    .success-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    }
+
+    .success-box {
+      background: #1c1c1c;
+      padding: 30px 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .success-box h1 {
+      color: #e63946; /* brand red */
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .success-box p {
+      font-size: 1rem;
+      margin-bottom: 25px;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .success-box a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #e63946;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: 0.3s ease-in-out;
+    }
+
+    .success-box a:hover {
+      background: #ff4c5b;
+      transform: translateY(-2px);
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .success-box {
+        padding: 20px 15px;
+      }
+
+      .success-box h1 {
+        font-size: 1.6rem;
+      }
+
+      .success-box p {
+        font-size: 0.95rem;
+      }
+
+      .success-box a {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .success-box h1 {
+        font-size: 1.4rem;
+      }
+
+      .success-box p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-wrapper">
+    <div class="success-box">
+      <h1>Booking Confirmed!</h1>
+      <p>Thank you for choosing <strong>HALLAQY</strong>.  
+      Your appointment request has been received successfully.  
+      Our team will contact you shortly to confirm the details.</p>
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
